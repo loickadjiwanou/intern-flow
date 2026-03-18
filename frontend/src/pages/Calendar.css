@@ -1,0 +1,81 @@
+.calendar-container .rbc-calendar {
+  font-family: 'Inter', sans-serif;
+}
+
+.calendar-container .rbc-header {
+  padding: 12px 8px;
+  font-weight: 600;
+  border-bottom: 2px solid hsl(var(--border));
+  background-color: hsl(var(--muted));
+}
+
+.calendar-container .rbc-month-view {
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.calendar-container .rbc-day-bg {
+  border-left: 1px solid hsl(var(--border));
+}
+
+.calendar-container .rbc-off-range-bg {
+  background-color: hsl(var(--muted));
+}
+
+.calendar-container .rbc-today {
+  background-color: hsl(var(--accent));
+}
+
+.calendar-container .rbc-event {
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.calendar-container .rbc-toolbar {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-container .rbc-toolbar button {
+  padding: 8px 16px;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.calendar-container .rbc-toolbar button:hover {
+  background-color: hsl(var(--accent));
+}
+
+.calendar-container .rbc-toolbar button.rbc-active {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border-color: hsl(var(--primary));
+}
+
+.calendar-container .rbc-date-cell {
+  padding: 4px 8px;
+  text-align: right;
+}
+
+.calendar-container .rbc-date-cell.rbc-now {
+  font-weight: 700;
+  color: hsl(var(--primary));
+}
+
+.dark .calendar-container .rbc-month-view {
+  background-color: hsl(var(--card));
+}
+
+.dark .calendar-container .rbc-day-bg {
+  background-color: hsl(var(--card));
+}
